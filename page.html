@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head><title> SRS Hospital management </title>
+<style>
+#AB{
+width: 50px;
+
+}
+table{
+	border: 3px solid black;
+	width: 30%;
+}
+td{
+	color: slateblue;
+}
+
+h1 {
+	color: #F08080;
+	font-family:cursive;
+	font-size: 400%;
+
+}
+.header{
+	border-bottom: #ccc 20px solid;
+	padding: 5px;
+}
+.container{
+	width: 1000px;
+	margin: 100px auto;
+}
+
+
+sup{
+	color: red;
+}
+h2{
+	color: #F08080;
+	font-family: cursive;
+	font-size: 200%
+}
+form{
+	color: #993366;
+}
+body {background-color: #FAEBD7;
+background-image: url('1hmis.jpg');
+background-size: cover;
+}
+</style>
+</head>
+
+<body >	
+	<div class="header">
+	<p><h1 style= "text-align: center;">&nbsp &nbsp<B>  SRS <img src="hospital-building-modern-parking-lot-59693686.jpg" alt="Hospital-Management" width="150" height="100" align="middle"> HOSPITAL </B></h1></p>
+<h2 style="text-align: center;">Deccan Pune</h2>
+<marquee style="font-family:Cursive;font-size:14pt;color:red;height:100px;" scrollamount="3" direction="left">Healing in a matter of time, but it is sometimes also a matter of opportunity.</marquee>
+</div>
+<div class="container">
+<table cellpadding="5"  bgcolor="powderblue" align="center" cellspacing="5">
+<tr><td><h4 style="color:#CC0066;"><i>PATIENT DETAILS:</i></h4></td></tr>
+<form action="abc.java">
+<tr><td><sup>*</sup> NAME:</td><td> <input type="text" name="name" required="" placeholder="Full Name" pattern="[A-Za-z]{3,15}" title="Digits not allowed"></td></tr>
+<tr><td><sup>*</sup>AGE:</td><td> <input type="text" name="age" ID="AB" placeholder="Age" pattern="[0-9]{1,3}" required="" title="Age always in digits."> </td></tr>
+<tr><td><sup>*</sup>SEX:</td><td><select name="sex" required="">
+		<option value="select">Select</option>
+		<option value="MALE">MALE</option>
+		<option value="FEMALE">FEMALE</option>
+		<option value="OTHERS">OTHERS</option>
+	</select>
+</td></tr>
+<tr><td><label>DATE OF BIRTH:</label></td><td>
+<input type="date"  name="dob"/></td></tr>
+<tr><td><sup>*</sup>CONTACT NO.:</td><td><input type="text" name="number" placeholder="Mobile Number" required=""  maxlength="10" pattern="[0-9]{10,10}" title="Enter valid Number"></td></tr>
+<tr><td>ALTERNATE NO.:</td><td><input type="text" name="Alternate" placeholder="Alternate contact no." maxlength="11" pattern="[0-9]{10,11}" title="Enter valid Number"></td></tr>
+<tr><td><sup>*</sup>EMAIL ID:</td><td><input type="email" name="email" required="" placeholder="email id"></td></tr>
+<tr><td><label><sup>*</sup>DATE FOR APPOINTMENT:</label></td><td><input type="date" name="dateap" required=""></td></tr>
+<tr><td><sup>*</sup>ADDRESS:</td><td>
+<textarea name="ADDRESS" rows="3" cols="20" placeholder="Postal Address" required=""></textarea></td></tr>
+<tr><td><sup>*</sup>PINCODE:</td><td><input type="text" name="PINCODE" placeholder="Postal Address Pincode" required="" maxlength="6" pattern="[0-9]{}"></td></tr>
+<tr><td><sup>*</sup>Your image:</td><td><input type="file" name="image" required="" pattern="[.jpg]{}" accept="image/*"></td></tr>
+<tr><td><input type="reset" name="reset"></td>
+<td><input type="submit" name="Apply" value="Apply" ></td></tr>
+
+</form>
+</table>
+</div>
+</body>
+</html>n
